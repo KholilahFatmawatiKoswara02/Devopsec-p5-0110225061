@@ -2,10 +2,12 @@ name: DevSecOps Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
+jobs:
+  # ... bagian jobs kamu di bawahnya tidak perlu diubah ...
 jobs:
   build:
     name: Build and Unit Tests
